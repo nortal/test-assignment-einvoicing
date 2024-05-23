@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <title>Arve detailvaade</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="false" />
+
+    <meta name="Author" content="AS Mees ja koer" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="gfx/_styles_screen.css" media="screen, projection" title="Styles" />
+    <link rel="stylesheet" type="text/css" href="gfx/_styles_superfish.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="cal/ui.datepicker.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="gfx/_styles_print.css" media="print" />
+
+    <!--<script type="text/javascript" src="js/jquery.pack.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.supersubs.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltip.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.example.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bgiframe.pack.js"></script>
+    <script type="text/javascript" src="cal/ui.datepicker.js"></script>
+
+    <script type="text/javascript" src="js/_scripts.js"></script>
+</head>
+
+<body>
+    <div id="header-wrap">
+        <div id="header">
+            <p id="logo">
+                <a href="index.html" title="Arved">Lihtsad Arved OU</a>
+            </p>
+            <div id="login">
+                <p>
+                </p>
+                <ul id="lang">
+                    <li class="active"><a href="#" onclick="return showModal('modalpopup100');">EST</a></li>
+                    <li><a href="#" onclick="return showModal('modalpopup100');">ENG</a></li>
+                </ul>
+                <p></p>
+
+                <div class="user">
+                    <p>
+                        <label>Raamatupidaja:</label>
+                        <a href="#" onclick="return showModal('modalpopup100');" title="Muuda kasutaja seadeid">Aleksander Skafander</a>
+                    </p>
+                    <p>
+                        <label>Esindatav:</label>
+                        <select onchange="throw Error('Siin on viga. Raporteeri arendajale.')">
+                            <option value="1">MTÜ Käbid ja Kännud</option>
+                            <option value="2">OÜ Metsalõikur</option>
+                        </select>
+                    </p>
+                    <p class="exit"><a href="#" onclick="return showModal('modalpopup100');">Välju</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap">
+        <div id="content">
+            <h1>Arve detailvaade</h1>
+            <div class="form-cols clear">
+                <div class="col1">
+                    <div class="form-heading">
+                        <div class="clear">
+                            <h2>Arve saatja</h2>
+                        </div>
+                    </div>
+                    <table class="form">
+                        <tr>
+                            <th>
+                                <label for="i01-01"><span class="req">* </span> Arve saatja:</label>
+                            </th>
+                            <td class="action-ico">AS Arvevabrik
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="i01-01">Registri-/isikukood:</label>
+                            </th>
+                            <td>10287322</td>
+                        </tr>
+                        <tr>
+                            <th nowrap>Saatja arvelduskonto(d):</th>
+                            <td>10552001107000 SEB</td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td>221014601724 Swedbank</td>
+                        </tr>
+                        <tr>
+                            <th>Makse saaja:</th>
+                            <td>Pahandusministeerium 10002028538006</td>
+                        </tr>
+                        <tr>
+                            <th>Arvelduskonto nr:</th>
+                            <td><input id="i01-01" type="text" class="text" value="10552001107000" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01">Hankija kood:</label></th>
+                            <td class="input"><input id="modalpopup01-03" class="text" type="text" value="76237" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col2">
+                    <div class="form-heading">
+                        <div class="clear">
+                            <h2>Arve info</h2>
+                        </div>
+                    </div>
+                    <table class="form">
+                        <tr>
+                            <th><label for="i01-01">Arve tüüp:</label></th>
+                            <td class="input">Kreedit</td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01"><span class="req">* </span>Arve nr:</label></th>
+                            <td><input id="i01-01" type="text" class="text" value="B08079205787" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01">Maksetunnus:</label></th>
+                            <td>7-30</td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01">Viitenumber:</label></th>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><label for="i03-03">Maksekorralduse selgitus:</label></th>
+                            <td>Arve nr B08079205787</td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01"><span class="req">* </span> Arve kuup&auml;ev:</label></th>
+                            <td>05.12.2008</td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01">Maksetähtaeg:</label></th>
+                            <td><input type="text" id="i01" class="date" maxlength="10" value="08.04.2009" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01"><span class="req">* </span> Kande kuup&auml;ev:</label></th>
+                            <td>05.12.2008</td>
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01">ERP dok. nr:</label></th>
+                            <td>5218491SAP</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col1">
+                    <div class="form-heading">
+                        <div class="clear">
+                            <h2>Arve saaja</h2>
+                        </div>
+                    </div>
+                    <table class="form">
+                        <tr>
+                            <th><label for="i01-01">Kontaktisik:</label></th>
+                            <td class="action-ico">Siim Saaja
+                        </tr>
+                        <tr>
+                            <th><label for="i01-01">Allüksus/osakond:</label></th>
+                            <td>IT</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="form-tabs-wrap">
+                <div class="form-tabs-heading">
+                    <div class="clear cont-wide">
+                        <ul>
+                            <li>
+                                <a href="#form-tab01" class="form-tab01">Manus 1</a>
+                                <a href="#" onclick="window.open('pdf/ZoneMedia_Arve_425766.pdf','popup','type=fullWindow,fullscreen','location=0,status=0,scrollbars=1'); return false;" class="new-win" title="Ava uues aknas">Ava uues aknas</a>
+                            </li>
+                            <li>
+                                <a href="#form-tab01" class="form-tab02">Manus 2</a>
+                                <a href="#" onclick="window.open('popup','type=fullWindow,fullscreen','location=0,status=0,scrollbars=1'); return false;" target="_blank" class="new-win" title="Ava uues aknas">Ava uues aknas</a>
+                            </li>
+                            <li>
+                                <a href="#form-tab01" class="form-tab03">Manus 3</a>
+                                <a href="#" onclick="window.open('pdf/file3.pdf','popup','type=fullWindow,fullscreen','location=0,status=0,scrollbars=1'); return false;" target="_blank" class="new-win" title="Ava uues aknas">Ava uues aknas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="form-tab01" class="form-tabs-content">
+                    <embed type="application/pdf" src="pdf/ZoneMedia_Arve_425766.pdf" wmode="transparent" width="900" height="450" />
+                </div>
+                <div id="form-tab02" class="form-tabs-content">
+                    <embed type="application/pdf" src="pdf/Kuludokumendid_2009_03_04_12_06_12.pdf" wmode="transparent" width="900" height="450" />
+                </div>
+                <div id="form-tab03" class="form-tabs-content">
+                    <embed type="application/pdf" src="pdf/Kuludokumendid_2009_03_04_12_06_12.pdff" wmode="transparent" width="900" height="450" />
+                </div>
+            </div>
+            <div class="action clear cont-wide">
+                <p class="primary">
+                    <!-- TODO: Enne järgmist tarnet vaja tagasi sisse kommenteerida -->
+                    <!--<input class="button alt" type="button" value="Vaata arve PDF vaadet" />	-->
+                    <input class="button alt" type="button" onClick="location.href='arve-muutmine.html'" value="Muuda" />
+                    <input class="button" type="button" onclick="return showModal('modalpopup101');" value="Salvesta" />
+                    <input class="button" type="button" onclick="return showModal('modalpopup110');" value="Suuna maksmiseks" />
+                    <input class="button" type="button" onclick="return showModal('modalpopup110');" value="Suuna kinnitamiseks" />
+                </p>
+            </div>
+            <div class="form-heading">
+                <div class="clear">
+                    <h3>Arveread</h3>
+                </div>
+            </div>
+
+            <table class="data" id="vaikimisi_tab">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <div align="center"><span class="req">* </span>Teenus/Kaup</div>
+                        </th>
+                        <th>
+                            <div align="center">Kogus</div>
+                        </th>
+                        <th>
+                            <div align="center">&Uuml;hik</div>
+                        </th>
+                        <th class="right">
+                            <div align="center">&Uuml;hiku hind </div>
+                        </th>
+                        <th class="right">
+                            <div align="center">Summa</div>
+                        </th>
+                        <th class="right">
+                            <div align="center">Netosumma</div>
+                        </th>
+                        <th>
+                            <div align="center">KM%</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>LARSEN X.O. 0,7L 40%</td>
+                        <td>
+                            <div align="right">2</div>
+                        </td>
+                        <td>
+                            <div align="left">pdl</div>
+                        </td>
+                        <td>
+                            <div align="right">467.36</div>
+                        </td>
+                        <td>
+                            <div align="right">934.72 </div>
+                        </td>
+                        <td>
+                            <div align="right">700.00</div>
+                        </td>
+                        <td alt="KM-i info" title="KM18; tavaline käibemaks">
+                            <div align="center">18</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kolimisteenused</td>
+                        <td>
+                            <div align="right">1</div>
+                        </td>
+                        <td>
+                            <div align="left"></div>
+                        </td>
+                        <td>
+                            <div align="right">45 123.00</div>
+                        </td>
+                        <td>
+                            <div align="right">45 123.00</div>
+                        </td>
+                        <td>
+                            <div align="right">45 123.00</div>
+                        </td>
+                        <td alt="KM-i info" title="KM18; tavaline käibemaks">
+                            <div align="center">18</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pr&uuml;givedu</td>
+                        <td>
+                            <div align="right">1</div>
+                        </td>
+                        <td>
+                            <div align="left"></div>
+                        </td>
+                        <td>
+                            <div align="right">123.00</div>
+                        </td>
+                        <td>
+                            <div align="right">123.00</div>
+                        </td>
+                        <td>
+                            <div align="right">123.00</div>
+                        </td>
+                        <td alt="KM-i info" title="KM18; tavaline käibemaks">
+                            <div align="center">18</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kindlustus</td>
+                        <td>
+                            <div align="right">1</div>
+                        </td>
+                        <td>
+                            <div align="left"></div>
+                        </td>
+                        <td>
+                            <div align="right">100.00</div>
+                        </td>
+                        <td>
+                            <div align="right">100.00</div>
+                        </td>
+                        <td>
+                            <div align="right">100.00</div>
+                        </td>
+                        <td>
+                            <div align="right"></div>
+                        </td>
+                    </tr>
+                    <tr class="subrow">
+                        <td colspan="10">
+                            <div align="right">3267398 - Hankijate tasumata arved
+                                <br>
+                                <br> 7570 - Ford 350TC Superbrig 757MFS
+                                <br> HOL01 - Administratiivdivisjon
+                                <br> LOG - Logistikaosakond
+                                <br>
+                                <br> Rea kinnitaja: Ants Aus </div>
+                        </td>
+                        <td>
+                            <div align="right"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Lillepotid</td>
+                        <td>
+                            <div align="right">10</div>
+                        </td>
+                        <td>
+                            <div align="left">tk</div>
+                        </td>
+                        <td>
+                            <div align="right">4 512.00</div>
+                        </td>
+                        <td>
+                            <div align="right">4 512.00</div>
+                        </td>
+                        <td>
+                            <div align="right">4 512.00</div>
+                        </td>
+                        <td alt="KM-i info" title="KM0; maksuvaba">
+                            <div align="center">0</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Vesi ja kanalisatsioon</td>
+                        <td>
+                            <div align="right">1</div>
+                        </td>
+                        <td>
+                            <div align="left"></div>
+                        </td>
+                        <td>
+                            <div align="right">7 890.00</div>
+                        </td>
+                        <td>
+                            <div align="right">7 890.00</div>
+                        </td>
+                        <td>
+                            <div align="right">7 890.00</div>
+                        </td>
+                        <td alt="KM-i info" title="KM5; 5 %-ne käibemaks">
+                            <div align="center">5</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <div align="right"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6">
+                            <div align="right">KM-ta kokku :</div>
+                        </td>
+                        <td nowrap>
+                            <div align="right">58 589.248</div>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <div align="right">K&auml;ibemaks kokku:</div>
+                        </td>
+                        <td nowrap>
+                            <div align="right">8689.83</div>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <div align="right"><strong>Arve summa kokku:</strong></div>
+                        </td>
+                        <td>
+                            <div align="right">62 284.08</div>
+                        </td>
+                        <td><span class="req">* </span>EEK</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <div align="right"><strong>TASUDA:</strong></div>
+                        </td>
+                        <td>
+                            <div align="right">50 300.65</div>
+                        </td>
+                        <td><span class="req">* </span>EEK</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div class="form-heading">
+                <div class="clear">
+                    <blockquote>
+                        <h2>Kommentaar</h2>
+                    </blockquote>
+                </div>
+            </div>
+            <table class="form">
+                <tr>
+                    <td>
+                        <textarea id="i03-04" cols="30" rows="3" class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam purus. Aliquam metus lorem, convallis ullamcuis ed eros. Etiam ultrices facilisis ligula. Sed euismod. Duis id quam a nunc mattis tristique.</textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="action clear cont-wide">
+                <p class="secondary"> <span class="back clear"><a href="index.html">Tagasi</a></span> </p>
+                <p class="primary">
+                    <input class="button" type="button" onclick="" value="Suuna kinnitamiseks" />
+                    <input class="button" type="button" onclick="return showModal('modalpopup101');" value="Salvesta " />
+                    <br>
+                    <br>
+                    <input class="button alt" type="button" onclick="return showModal('modalpopup102');" value="Trüki" />
+                </p>
+            </div>
+
+            <div id="modalwrap">
+                <div id="modalpopup100" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Vastav funktsioon ei ole veel loodud. Tegemist ei ole veaga.</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup101" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Salvestatud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup102" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div align="center" class="modalpopup-content-inner">
+                            <p>EI trükitud! Saatsid printerisse käsu, mis tekitab printeri tõrke...</p>
+                            <p><img src="img/happytester.png" alt="happy tester!"></p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup110" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="location.href='index.html'">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Suunatud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="location.href='index.html'" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

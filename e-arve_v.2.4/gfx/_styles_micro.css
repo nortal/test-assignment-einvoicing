@@ -1,0 +1,66 @@
+@import "_styles_screen.css";
+
+/*
+	Suggested order:
+--------------------------------------------------
+	display, position, float, clear
+	width, height
+	margin, padding
+	border, background
+	color, font, line-height, text-align, text-decoration
+	vertical-align, white-space, overflow, cursor, list-style
+*/
+
+HTML,
+BODY {
+	background: #fff;
+}
+
+#micro-wrap {
+	width: 420px;
+	margin: 100px auto 0;
+	border: 4px solid #f7f7f7;
+	background: #fff;
+	text-align: left;
+}
+#micro-wrap-inner {
+	padding: 2px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+#micro-header {
+	padding: 12px;
+	background: #f4f4f4 url(bg01.png) no-repeat 0 0;
+}
+#micro-header H1 {
+	width: 154px;
+	height: 34px;
+	height: 0 !important;
+	height /**/: 34px;
+	overflow: hidden;
+	margin: 0;
+	padding: 34px 0 0 0;
+	border: none;
+	background: url(logo.png) no-repeat 0 0;
+}
+
+#micro-content {
+	margin-top: 1px;
+	padding: 0 12px 12px;
+	border-top: 1px solid #eee;
+}
+#micro-content TABLE.form TH {
+	width: 35%;
+}
+#micro-content TABLE.form TD {
+	width: 65%;
+}
+#micro-content TABLE.form TR.login-action TD {
+	padding-top: 6px;
+}
+#micro-content P.more {
+	margin-top: 1em;
+	padding-top: .5em;
+	border-top: 1px solid #ddd;
+}

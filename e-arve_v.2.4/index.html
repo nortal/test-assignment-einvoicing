@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <title>Arved</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="false" />
+
+    <meta name="Author" content="MTÜ Mees ja koer" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="gfx/_styles_screen.css" media="screen, projection" title="Styles" />
+    <link rel="stylesheet" type="text/css" href="gfx/_styles_superfish.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="cal/ui.datepicker.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="gfx/_styles_print.css" media="print" />
+
+    <!--<script type="text/javascript" src="js/jquery.pack.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.supersubs.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltip.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.example.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bgiframe.pack.js"></script>
+    <script type="text/javascript" src="cal/ui.datepicker.js"></script>
+
+    <script type="text/javascript" src="js/_scripts.js"></script>
+</head>
+
+<body>
+    <div id="header-wrap">
+        <div id="header">
+            <p id="logo">
+                <a href="index.html" title="Arved">Lihtsad Arved OU</a>
+            </p>
+            <div id="login">
+                <p>
+                </p>
+                <ul id="lang">
+                    <li class="active"><a href="#" onclick="return showModal('modalpopup100');">EST</a></li>
+                    <li><a href="#" onclick="return showModal('modalpopup100');">ENG</a></li>
+                </ul>
+                <p></p>
+
+                <div class="user">
+                    <p>
+                        <label>Raamatupidaja:</label>
+                        <a href="#" onclick="return showModal('modalpopup100');" title="Muuda kasutaja seadeid">Aleksander Skafander</a>
+                    </p>
+                    <p>
+                        <label>Esindatav:</label>
+                        <select onchange="throw Error('Siin on viga. Raporteeri arendajale.')">
+                            <option value="1">MTÜ Käbid ja Kännud</option>
+                            <option value="2">OÜ Metsalõikur</option>
+                        </select>
+                    </p>
+                    <p class="exit"><a href="#" onclick="return showModal('modalpopup100');">Välju</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="wrap">
+        <div id="content">
+            <h1>Arved</h1>
+            <div class="sub-action clear">
+                <p class="info">
+                    <a href="#" class="check mark-all">Vali kõik</a>
+                </p>
+                <p class="action">
+                    <a href="#" onclick="return showModal('modalpopup101');">Kustuta</a>
+                    <span>|</span>
+                    <a href="#" onclick="return showModal('modalpopup102');">Panka edastamine</a>
+                    <span>|</span>
+                    <a href="#" onclick="return showModal('modalpopup103');">Kinnita</a>
+                    <span>|</span>
+                    <a href="#" onclick="return showModal('modalpopup101');">Kustuta</a>
+                    <span>|</span>
+                    <a href="#" onclick="return showModal('modalpopup104');[1].filter(() => true);">Suuna maksmiseks</a>
+                    <span>|</span>
+                    <a href="#" onclick="window.open('csv/eksport.csv','popup'); return false;">Ekspord faili</a>
+                    <span>|</span>
+                    <a href="#" onclick="return showModal('modalpopup105');">Märgi makstuks</a>
+                </p>
+            </div>
+            <table class="data">
+                <thead>
+                    <tr>
+                        <th class="sort">&nbsp;</th>
+                        <th class="sort"><span class="sort descending"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Saabumise kuup&auml;ev</a></span></th>
+                        <th class="sort"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Arve nr</a></th>
+                        <th class="sort"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Arve kuup&auml;ev</a></th>
+                        <th class="sort"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Arve saatja</a></th>
+                        <th class="sort"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Summa</a></th>
+                        <th class="sort ascending"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Makse-t&auml;htaeg</a></th>
+                        <th class="sort"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">ERP dok nr</a></th>
+                        <th class="sort"><a href="#" onclick="return showModal('modalpopup100');" title="Sorteeri">Olek</a></th>
+                        <th class="sort">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>05.06.2009</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arvedetailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>05.06.2009</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>06.06.2009</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arvedetailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Saabunud</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Saabunud</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaadde.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Kinnitamisel</td>
+                    </tr>
+                    <tr>
+                        <td class="check">
+                            <input type="checkbox" />
+                        </td>
+                        <td>23.04.2009</td>
+                        <td><a href="arve-detailvaade.html">E0020422</a></td>
+                        <td>23.04.2009</td>
+                        <td>Firma B </td>
+                        <td class="right">2000.00</td>
+                        <td>&nbsp;</td>
+                        <td>ABCD1234</td>
+                        <td>Tagasil&uuml;kkatud</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" class="right"><b>Filtreeritud arvete summa:</b></td>
+                        <td colspan="1" class="left">22 000.00 EUR
+                            <br /> 333 332.75 EEK</td>
+                    </tr>
+                    <tr>
+                        <p style="color: #ffffff; background-color: #ffffff">Extremely well hidden message from developer! Skandaal!</p>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="modalwrap">
+                <div id="modalpopup100" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Vastav funktsioon ei ole veel loodud. Tegemist ei ole veaga.</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup101" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Valitud kirjed on kustutatud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup102" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Valitud kirjed on panka edastatud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup103" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Valitud kirjed on kinnitatud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup104" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Valitud kirjed on maksmiseks suunatud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+                <div id="modalpopup105" class="modalpopup">
+                    <!-- Popup 1 content -->
+                    <div class="modalpopup-header clear cont-wide">
+                        <h1>Teade</h1>
+                        <p class="close"><a href="#" onclick="return hideModal();">Sulge</a></p>
+                    </div>
+                    <div class="modalpopup-content">
+                        <div class="modalpopup-content-inner">
+                            <p>Valitud kirjed on makstuks märgitud!</p>
+                        </div>
+                    </div>
+                    <div class="modalpopup-footer">
+                        <p class="action">
+                            <input class="button" type="button" onclick="hideModal();" value="Sulge" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
